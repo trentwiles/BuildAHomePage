@@ -1,0 +1,100 @@
+body {
+  font-family: arial;
+  font-size: 34px;
+  background-color: black;
+}
+
+a {
+  text-decoration: none;
+  font-size: 65px;
+  color: inherit;
+}
+div.main {
+  background-color: #c7c7c7;
+  width: 100%;
+  opacity: 65%;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+#fullScreenDiv {
+  width: 100%;
+  min-height: 100%;
+  /* Set the height to match that of the viewport. */
+  height: 100vh;
+  width: auto;
+  padding: 0 !important;
+  margin: 0 !important;
+  background-color: gray;
+  position: relative;
+}
+#video {
+  width: 100vw;
+  height: auto;
+  object-fit: cover;
+  left: 0px;
+  top: 0px;
+  z-index: 1;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  #video {
+    height: 150%;
+    top: -100%;
+  }
+  #videosubstitute {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  #video {
+    width: 150%;
+    left: -100%;
+  }
+  #videosubstitute {
+    display: block;
+    width: auto;
+    height: 100%;
+  }
+}
+/*if there is 992  pixels or more, then display the video but hide the image*/
+@media only screen and (min-width: 992px) {
+  #video {
+    display: block;
+  }
+  #videosubstitute {
+    display: none;
+  }
+}
+
+/* The container for our text and stuff */
+#messageBox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  font-size: 30px;
+  color: black;
+}
+#space {
+  background-color: black;
+  width: 100%;
+  height: 10%;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+html {
+  scroll-behavior: smooth;
+}

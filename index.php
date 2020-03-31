@@ -24,3 +24,5 @@ echo "</center>\n";
 echo "</html>\n";
 
 ?>
+  <script src="https://button.glitch.me/button.js"></script>
+<div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>  

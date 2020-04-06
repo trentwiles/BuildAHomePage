@@ -7,3 +7,13 @@ button {
   text-decoration: none;
   font-size: 18px;
 }
+
+button.active {
+  background-color: grey;
+  border: none;
+  display: inline-block;
+  color: gold;
+  padding: 12px 28px;
+  text-decoration: none;
+  font-size: 18px;
+}
